@@ -1,0 +1,2 @@
+
+docker run -p 3005:8000 -v "$(pwd)/logs.txt:/backend-example-docker-master/logs.txt" backend-docker

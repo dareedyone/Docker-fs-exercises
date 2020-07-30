@@ -1,0 +1,81 @@
+docker run -d devopsdockeruh/exec_bash_exercise
+Unable to find image 'devopsdockeruh/exec_bash_exercise:latest' locally
+latest: Pulling from devopsdockeruh/exec_bash_exercise
+1c6172af85ee: Pulling fs layer
+b194b0e3c928: Pulling fs layer
+1f5ec00f35d5: Pulling fs layer
+93b1353672b6: Pulling fs layer
+3d7f38db3cca: Pulling fs layer
+21e102f9fe89: Pulling fs layer
+d851ffed797c: Pulling fs layer
+a45031e28c68: Pulling fs layer
+ca3c1414856f: Pulling fs layer
+02c74c9936fd: Pulling fs layer
+ddb55f8ab0a8: Pulling fs layer
+d851ffed797c: Waiting
+a45031e28c68: Waiting
+93b1353672b6: Waiting
+3d7f38db3cca: Waiting
+21e102f9fe89: Waiting
+ca3c1414856f: Waiting
+02c74c9936fd: Waiting
+ddb55f8ab0a8: Waiting
+1f5ec00f35d5: Verifying Checksum
+1f5ec00f35d5: Download complete
+b194b0e3c928: Verifying Checksum
+b194b0e3c928: Download complete
+1c6172af85ee: Verifying Checksum
+1c6172af85ee: Download complete
+1c6172af85ee: Pull complete
+21e102f9fe89: Download complete
+b194b0e3c928: Pull complete
+1f5ec00f35d5: Pull complete
+93b1353672b6: Verifying Checksum
+93b1353672b6: Download complete
+93b1353672b6: Pull complete
+a45031e28c68: Download complete
+ca3c1414856f: Verifying Checksum
+ca3c1414856f: Download complete
+02c74c9936fd: Verifying Checksum
+02c74c9936fd: Download complete
+ddb55f8ab0a8: Verifying Checksum
+ddb55f8ab0a8: Download complete
+d851ffed797c: Verifying Checksum
+d851ffed797c: Download complete
+3d7f38db3cca: Download complete
+3d7f38db3cca: Pull complete
+21e102f9fe89: Pull complete
+d851ffed797c: Pull complete
+a45031e28c68: Pull complete
+ca3c1414856f: Pull complete
+02c74c9936fd: Pull complete
+ddb55f8ab0a8: Pull complete
+Digest: sha256:d38b6f6b0eed2880e25c9eb7f83f1cd016ffe3a56c9a3fec6e7bee480bf1ed0f
+Status: Downloaded newer image for devopsdockeruh/exec_bash_exercise:latest
+e610ab1ad74fd85ed67086cf3678e566e1d72efde315c40ec7687e361ca0caa5
+
+drd1@sp-drd1 MINGW64 ~
+$ docker container ls
+CONTAINER ID        IMAGE                               COMMAND                  CREATED             STATUS              PORTS               NAMES
+e610ab1ad74f        devopsdockeruh/exec_bash_exercise   "docker-entrypoint.s…"   39 seconds ago      Up 25 seconds                           upbeat_mestorf
+
+drd1@sp-drd1 MINGW64 ~
+$ docker exec -it upbeat_mestorf bash
+root@e610ab1ad74f:/usr/app# tail -f ./logs.txt
+"Docker is easy"
+Tue, 28 Jul 2020 11:41:27 GMT
+Tue, 28 Jul 2020 11:41:30 GMT
+Tue, 28 Jul 2020 11:41:33 GMT
+Tue, 28 Jul 2020 11:41:36 GMT
+Secret message is:
+"Docker is easy"
+Tue, 28 Jul 2020 11:41:42 GMT
+Tue, 28 Jul 2020 11:41:45 GMT
+Tue, 28 Jul 2020 11:41:48 GMT
+Tue, 28 Jul 2020 11:41:51 GMT
+Secret message is:
+"Docker is easy"
+Tue, 28 Jul 2020 11:41:57 GMT
+Tue, 28 Jul 2020 11:42:00 GMT
+Tue, 28 Jul 2020 11:42:03 GMT
+Tue, 28 Jul 2020 11:42:06 GMT
