@@ -1,0 +1,3 @@
+docker-compose up
+docker-compose stop
+docker-compose up --scale compute=3
