@@ -1,0 +1,1 @@
+i made the front end and backend rely on the proxy by changing environtment variables in both front end and back end service

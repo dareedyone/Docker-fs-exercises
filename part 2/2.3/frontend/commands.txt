@@ -1,2 +1,0 @@
-docker build -t 12-frontend-img . 
-docker run -p 3003:5000 12-frontend-img
