@@ -1,0 +1,9 @@
+with ubuntu
+frontend image -  317mb
+backend image -   492mb
+
+with node:14-alpine
+
+frontend image - 329mb
+backend image - 154mb
+

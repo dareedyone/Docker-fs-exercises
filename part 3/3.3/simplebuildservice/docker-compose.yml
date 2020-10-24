@@ -1,0 +1,8 @@
+version: "3"
+services:
+  simplebuildservice:
+    image: dareedyone/simple-build-service
+    build: .
+    container_name: simple-build-service
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
